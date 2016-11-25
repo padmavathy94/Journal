@@ -1,0 +1,146 @@
+/* YOUR CUSTOM STYLES */
+.extra-margins {
+	margin-top: 1rem;
+	margin-bottom: 2.5rem;
+}
+
+main {
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+
+html, body, .view {
+	height: 100%;
+}
+
+.view {
+	background: url("file:///Users/radhap/Documents/Project%20Journal/Images/img3_1920x1080.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.flex-center {
+	color: #fff;
+}
+
+#contact .fa {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.navbar {
+	background-color: transparent;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: #fff;
+}
+
+.scrolling-navbar {
+	-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+	background-color: #5d74a2;
+}
+
+footer.page-footer {
+	background-color: #5d74a2;
+	margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+	.navbar {
+		background-color: #5d74a2;
+	}
+}
+
+/* Carousel*/
+
+.carousel,
+.carousel-item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url("file:///Users/radhap/Documents/Project%20Journal/Images/img5_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url("file:///Users/radhap/Documents/Project%20Journal/Images/img1_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url("file:///Users/radhap/Documents/Project%20Journal/Images/img8_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* But how does it work? Let me explain in few points:
+
+1. The answer is easy - we've removed images from index.html and put it as a background of .carousel-item elements by using CSS. Because we've set a height of .item to be a 100% of available space, images will adjust to it (no matter what is the size of the image, it will always fit).
+
+2. nth-child(1), nth-child(2), nth-child(3) refers to the slides numbers.
+
+3. We also have to set a height: 100% to each parent element of the carousel (html, body and .view).
+
+4. In the html code of our Carousel we use a Mask - we lerned about this consturction in the previous tutorial. Thanks to that we can adjust a darknes of our image to make the Caption (text and buttons) more visible.
+
+5. We also use a class .flex-center to align the caption exactly in the middle of the screen. We are using a Flex Box. You will learn more about it in the next lessons.
+
+6. If you look closer at our current carousel code you will notice we've also used a class .animated together with the animation class. That gives a nice animation to our caption when switching slides. If you didn't read a previous tutorial about animations you can learn more about it in theANIMATIONS section of MDB documentation. */
+
+@media (min-width: 776px) {
+    .carousel .view ul li {
+        display: inline;
+    }
+    .carousel .view .full-bg-img ul li .flex-item {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.carousel .carousel-item video {
+    height: 100%;
+    width: auto;
+}
+
+.carousel-caption {
+	height: 100%;
+	padding-top: 7rem;
+}
+
+@media (max-width: 768px) {
+    .full-bg-img,
+    .view {
+        height: auto;
+        position: relative;
+    }
+}
+
+#entTable table {
+    border-collapse: collapse; 
+    table-layout: fixed; 
+    width:310px;
+}
+
+#entTable td {
+    word-wrap: break-word;
+    text-align: center;
+}
+
+#entTable th {
+    text-align: center;
+}
